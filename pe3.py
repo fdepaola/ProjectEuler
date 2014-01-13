@@ -2,7 +2,7 @@ import math
 print("Project Euler Problem #3\n")
 
 def isPrime(x):
-    for j in range(2,math.floor(x/2)):
+    for j in range(2,math.ceil(math.sqrt(x/2))):
         if (x % j == 0):
             return False
     return True
